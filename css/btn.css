@@ -1,0 +1,232 @@
+
+/* General button style (reset) */
+.btn-cta,.btn-ghost{
+	position: relative;
+	margin-top: 50px;
+	min-width: 231px;
+	padding: 15px 0;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 16px;
+	cursor: pointer;
+	outline: none;
+	font-weight: 300;
+	text-decoration: none!important;
+	font-style: italic;
+	z-index: 100;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-ghost:after,.btn-cta:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/*------------------------CTA----------------------------*/
+/*bleu*/
+.btn-cta.bleu{
+	border: 3px solid #273878;
+	color: #fff;
+	background: #273878;
+}
+
+.btn-cta.bleu:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #d81b60;
+}
+
+.btn-cta.bleu:hover,
+.btn-cta.bleu:active {
+	border: 3px solid #d81b60;
+	color: #fff;
+}
+
+.btn-cta.bleu:hover:after,
+.btn-cta.bleu:active:after {
+	width: 100%;
+}
+/*rose*/
+.btn-cta.rose{
+	border: 3px solid #d81b60;
+	color: #fff;
+	background: #d81b60;
+}
+
+.btn-cta.rose:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+}
+
+.btn-cta.rose:hover,
+.btn-cta.rose:active {
+	color: #d81b60;
+}
+
+.btn-cta.rose:hover:after,
+.btn-cta.rose:active:after {
+	width: 100%;
+}
+/*vert*/
+.btn-cta.vert{
+	border: 3px solid #689f38;
+	color: #fff;
+	background: #689f38;
+}
+
+.btn-cta.vert:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #d81b60;
+}
+
+.btn-cta.vert:hover,
+.btn-cta.vert:active {
+	border: 3px solid #d81b60;
+	color: #fff;
+}
+
+.btn-cta.vert:hover:after,
+.btn-cta.vert:active:after {
+	width: 100%;
+}
+/*orange*/
+.btn-cta.orange{
+	border: 3px solid #ff9800;
+	color: #fff;
+	background: #ff9800;
+}
+
+.btn-cta.orange:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #d81b60;
+}
+
+.btn-cta.orange:hover,
+.btn-cta.orange:active {
+	border: 3px solid #d81b60;
+	color: #fff;
+}
+
+.btn-cta.orange:hover:after,
+.btn-cta.orange:active:after {
+	width: 100%;
+}
+/*------------------------GHOST----------------------------*/
+/*bleu*/
+.btn-ghost.bleu{
+	border: 3px solid #273878;
+	color: #273878;
+}
+
+.btn-ghost.bleu:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #273878;
+}
+
+.btn-ghost.bleu:hover,
+.btn-ghost.bleu:active {
+	color: #fff;
+}
+
+.btn-ghost.bleu:hover:after,
+.btn-ghost.bleu:active:after {
+	width: 100%;
+}
+/*rose*/
+.btn-ghost.rose{
+	border: 3px solid #d81b60;
+	color: #d81b60;
+}
+
+.btn-ghost.rose:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #d81b60;
+}
+
+.btn-ghost.rose:hover,
+.btn-ghost.rose:active {
+	color: #fff;
+}
+
+.btn-ghost.rose:hover:after,
+.btn-ghost.rose:active:after {
+	width: 100%;
+}
+/*vert*/
+.btn-ghost.vert{
+	border: 3px solid #689f38;
+	color: #689f38;
+}
+
+.btn-ghost.vert:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #689f38;
+}
+
+.btn-ghost.vert:hover,
+.btn-ghost.vert:active {
+	color: #fff;
+}
+
+.btn-ghost.vert:hover:after,
+.btn-ghost.vert:active:after {
+	width: 100%;
+}
+/*orange*/
+.btn-ghost.orange{
+	border: 3px solid #ff9800;
+	color: #ff9800;
+}
+
+.btn-ghost.orange:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #ff9800;
+}
+
+.btn-ghost.orange:hover,
+.btn-ghost.orange:active {
+	color: #fff;
+}
+
+.btn-ghost.orange:hover:after,
+.btn-ghost.orange:active:after {
+	width: 100%;
+}
+/*
+
+.btn-ghost.bleu{background: none;border: 3px solid #273878; color: #273878;}
+.btn-cta.bleu{background: #273878;border: 3px solid #273878; color: #ffffff;}
+.btn-ghost.rose{background: none;border: 3px solid #d81b60; color: #d81b60;}
+.btn-cta.rose{background: #d81b60;border: 3px solid #d81b60; color: #ffffff;}
+.btn-ghost.vert{background: none;border: 3px solid #689f38; color: #689f38;}
+.btn-cta.vert{background: #689f38;border: 3px solid #689f38; color: #ffffff;}
+.btn-ghost.orange{background: none;border: 3px solid #ff9800; color: #ff9800;}
+.btn-cta.orange{background: #ff9800;border: 3px solid #ff9800; color: #ffffff;}*/
