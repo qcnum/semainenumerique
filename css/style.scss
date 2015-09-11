@@ -254,6 +254,7 @@ footer{
   left: 0;
   padding: 30px;
   display: inline-block;
+  width: 100%;
 }
 footer span{
   width: 50px;
@@ -365,12 +366,13 @@ padding-left:0;
   .event .descr-event{
     text-align: center;
   }
-.fp-slide{
-float:none;
-}
-.fp-slidesNav{display:none;}
-.fp-controlArrow{display:none}
-.page-3 h2.titre.titre-slide2{display:none!important;}
-.page-3 .vertical:first-child{ padding-bottom:0;}
-.page-3 .vertical:last-child{ padding-top:0;}
+  .fp-slide{
+    float:none;
+  }
+  .fp-slidesNav{display:none;}
+  .fp-controlArrow{display:none}
+  .page-3 h2.titre.titre-slide2{display:none!important;}
+  .page-3 .vertical:first-child{ padding-bottom:0;}
+  .page-3 .vertical:last-child{ padding-top:0;}
+  footer { position: relative !important; }
 }
