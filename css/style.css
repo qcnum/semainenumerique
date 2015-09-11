@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6{margin: 0;}
 .vertical{
 	display:inline-block;
 	  vertical-align:middle;
-	  float: none;	
+	  float: none;
 }
 /*-------------------------MENU--------------------------*/
 section#header{
@@ -126,7 +126,7 @@ nav .btn-cta{
 }
 .conteur .sous-titre{
 	padding: 0;
-	margin-bottom:30px; 
+	margin-bottom:30px;
 }
 /*-------------------------PAGE2--------------------------*/
 .page-2{
@@ -363,9 +363,8 @@ padding-left:0;
 float:none;
 }
 .fp-slidesNav{display:none;}
-.fp-controlArrow{display:none} 
+.fp-controlArrow{display:none}
 .page-3 h2.titre.titre-slide2{display:none!important;}
 .page-3 .vertical:first-child{ padding-bottom:0;}
 .page-3 .vertical:last-child{ padding-top:0;}
 }
-	
