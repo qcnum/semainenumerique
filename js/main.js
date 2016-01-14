@@ -52,7 +52,7 @@ jQuery(function($){
 // COMPTEUR OFQJ
 jQuery(function($){
 	
-	var date_ofqj = new Date(2016,03,10,10,00,00);
+	var date_ofqj = new Date(2016,02,20,10,00,00);
 	var jours_ofqj = $('#jours-ofqj');
 	
 	setDate();
