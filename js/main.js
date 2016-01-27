@@ -47,28 +47,6 @@ jQuery(function($){
 			setTimeout(setDate,1000);
 			
 		}
-	
-});
-// COMPTEUR OFQJ
-jQuery(function($){
-	
-	var date_ofqj = new Date(2016,02,20,10,00,00);
-	var jours_ofqj = $('#jours-ofqj');
-	
-	setDate();
-	
-	function setDate(){
-			var now = new Date();
-			var se = ((date_ofqj.getTime() - now.getTime())/1000)- now.getTimezoneOffset()*60;
-
-			var d = Math.floor(se/86400);
-			jours_ofqj.html('<span class="boldTxt count-ofqj">'+d+'</span><br/><span class="slimTxt count">Jour'+(d>1?'s':'')+'</span></br><span class="slimTxt sous">RESTANT'+(d>1?'s':'')+' pour vous inscrire</span>'); 		
-			se-=d*86400;
-			
-			setTimeout(setDate,1000);
-
-		}
-	
 });
 
 var couleur = [];
