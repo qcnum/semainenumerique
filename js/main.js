@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		menu: true,
-		anchors: ['accueil', 'cestquoi', 'evenements','ofqj','marraine','partenaires'],
+		anchors: ['accueil', 'cestquoi', 'evenements', 'marraine', 'partenaires'],
 		navigation: false,
 		responsiveWidth: 855,
 		responsiveHeight: 360,
