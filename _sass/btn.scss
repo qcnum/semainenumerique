@@ -143,12 +143,14 @@
 }
 
 .btn-ghost.bleu:hover,
-.btn-ghost.bleu:active {
+.btn-ghost.bleu:active,
+.btn-ghost.bleu.actived {
 	color: #fff;
 }
 
 .btn-ghost.bleu:hover:after,
-.btn-ghost.bleu:active:after {
+.btn-ghost.bleu:active:after,
+.btn-ghost.bleu.actived:after {
 	width: 100%;
 }
 /*rose*/
@@ -166,12 +168,14 @@
 }
 
 .btn-ghost.rose:hover,
-.btn-ghost.rose:active {
+.btn-ghost.rose:active,
+.btn-ghost.rose.actived {
 	color: #fff;
 }
 
 .btn-ghost.rose:hover:after,
-.btn-ghost.rose:active:after {
+.btn-ghost.rose:active:after,
+.btn-ghost.rose.actived:after {
 	width: 100%;
 }
 /*vert*/
@@ -189,12 +193,14 @@
 }
 
 .btn-ghost.vert:hover,
-.btn-ghost.vert:active {
+.btn-ghost.vert:active,
+.btn-ghost.vert.active {
 	color: #fff;
 }
 
 .btn-ghost.vert:hover:after,
-.btn-ghost.vert:active:after {
+.btn-ghost.vert:active:after,
+.btn-ghost.vert.active:after {
 	width: 100%;
 }
 /*orange*/
@@ -212,12 +218,14 @@
 }
 
 .btn-ghost.orange:hover,
-.btn-ghost.orange:active {
+.btn-ghost.orange:active,
+.btn-ghost.orange.actived {
 	color: #fff;
 }
 
 .btn-ghost.orange:hover:after,
-.btn-ghost.orange:active:after {
+.btn-ghost.orange:active:after,
+.btn-ghost.orange.actived:after {
 	width: 100%;
 }
 /*

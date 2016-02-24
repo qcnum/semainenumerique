@@ -3,10 +3,10 @@
 @import "bootstrap";
 @import "jquery.fullPage";
 @import "normalize";
+@import "component";
 @import "btn";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800,800italic);
-
 html,body{
   height: 100%;
   width: 100%;
@@ -28,9 +28,6 @@ h1,h2,h3,h4,h5,h6{margin: 0;}
 .wrapper{
   width: 1280px;
   margin: 0 auto;
-  display: inline-block;
-  line-height: 1.4;
-  vertical-align: middle;
 }
 .boldTxt{
   font-weight: 800;
@@ -60,7 +57,7 @@ h1,h2,h3,h4,h5,h6{margin: 0;}
 .vertical{
   display:inline-block;
     vertical-align:middle;
-    float: none;
+    float: none;  
 }
 /*-------------------------MENU--------------------------*/
 section#header{
@@ -69,10 +66,11 @@ section#header{
   display:inline-block;
   width: 100%;
   background: #fff;
-  z-index:9;
+  z-index:1000;
   height: 58px;
   text-align:center;
   color: #f2f2f2;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 nav{
   text-align: left;
@@ -128,18 +126,10 @@ nav .btn-cta{
 }
 .conteur{
   text-align: center;
-  padding: 50px 0px;
-}
-.conteur .sous-titre{
-  padding: 0;
-  margin-bottom:30px;
 }
 /*-------------------------PAGE2--------------------------*/
 .page-2{
   background: url('../img/bg-2.png') center center #ffffff;
-}
-.page-2 .left{
-  background-color: rgba(255, 255, 255, 0.42);
 }
 .hashtag{
   font-size: 80px;
@@ -158,8 +148,6 @@ nav .btn-cta{
   text-align: center;
   overflow: hidden;
   background: #ffffff;
-  height: 510px;
-  position: relative;
 }
 .event img{
   width: 100%;
@@ -173,20 +161,9 @@ nav .btn-cta{
   font-size: 18px;
 }
 .event .descr-event .btn-cta{
-  position: absolute;
-  bottom: 20px;
+  margin-top: 30px;
+  width: 100%;
 }
-.content-event{
-  margin: 0;
-}
-.cont-events{
-  padding: 0;
-}
-.cont-event{
-  padding: 0;
-  display: inline-block;
-}
-
 /*-------------------------PAGE4--------------------------*/
 div#jours-ofqj{
   line-height: 30px
@@ -231,11 +208,6 @@ span.sous{
 .temoignage .texte .titre .slimTxt{
   font-size: 20px
 }
-.logo-ofqj{
-  max-height: 200px;
-  margin-bottom: 30px;
-  width: auto;
-}
 /*-------------------------PAGE6--------------------------*/
 .partenaire{
   position: relative;
@@ -251,10 +223,7 @@ span.sous{
 footer{
   position: absolute!important;
   bottom: 0;
-  left: 0;
   padding: 30px;
-  display: inline-block;
-  width: 100%;
 }
 footer span{
   width: 50px;
@@ -275,39 +244,11 @@ footer a{
   *{
     text-align: center;
   }
-  .event .descr-event .btn-cta{
-    position: relative;
-    margin-top: 20px;
-  }
-  .hashtag{
-    font-size: 25px
-  }
-  .boldTxt{
-    font-weight: 800;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 25px;
-  }
-  .slimTxt{
-    font-weight: 300;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 20px;
-  }
-  .logo{
-    width: 80%;
-    margin: 0 auto;
-  }
-  .fp-tableCell{
-    height: auto !important;
-    line-height: 1.4 !important;
-  }
   .wrapper{
     padding: 30px 0;
   }
   .page{
-    padding: 20px;
-    height: auto!important;
+    padding: 50px;
   }
   .bouton-menu{
     display: block;
@@ -315,7 +256,7 @@ footer a{
     top: 10px;
     left: 10px;
     color: #000;
-    z-index: 1000;
+    z-index: 1000;  
   }
   section#header{
     position: fixed;
@@ -335,7 +276,6 @@ footer a{
   }
   nav{
     text-align: center;
-padding-left:0;
   }
   #header li{
     margin: 10px;
@@ -361,18 +301,86 @@ padding-left:0;
   .event{
     margin-top: 30px;
     text-align: center;
-               height: auto!important;
   }
   .event .descr-event{
     text-align: center;
   }
-  .fp-slide{
-    float:none;
-  }
-  .fp-slidesNav{display:none;}
-  .fp-controlArrow{display:none}
-  .page-3 h2.titre.titre-slide2{display:none!important;}
-  .page-3 .vertical:first-child{ padding-bottom:0;}
-  .page-3 .vertical:last-child{ padding-top:0;}
-  footer { position: relative !important; }
+}
+/*-------------------------Programme--------------------------*/
+
+.marge-top {
+  margin-top: 70px;
+}
+
+.programme {
+  background: #eceff1;
+  height: 200px;
+}
+.typeEvent {
+  display: block;
+  font-size: 10px;
+}
+.tab-pane .component{
+  padding: 0;
+}
+#jours a.btn-ghost {
+  margin-top: 5px;
+  min-width: 159px;
+}
+.cible {
+  display: block;
+  font-style: italic;
+  font-size: 10px;
+}
+.mardi th {
+    background-color: #CC7405;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+.mardi tbody th {
+  background-color: #fb8c00;
+}
+.mardi tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+.mardi tbody tr:hover {
+    background-color: rgba(251,140,0,.5);
+}
+
+.mercredi th {
+    background-color: #A31448;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+.mercredi tbody th {
+  background-color: #d81b60;
+}
+.mercredi tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+.mercredi tbody tr:hover {
+    background-color: rgba(216,27,96,.3);
+}
+
+.jeudi th {
+    background-color: #111F51;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+.jeudi tbody th {
+  background-color: #273878;
+}
+.jeudi tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+.jeudi tbody tr:hover {
+    background-color: rgba(39,56,120,.5);
+}
+
 }
