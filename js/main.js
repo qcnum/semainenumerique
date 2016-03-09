@@ -16,7 +16,7 @@ $(document).ready(function() {
 // COMPTEUR EVENT
 jQuery(function($){
 	
-	var launch = new Date(2016,04,04,10,00,00);
+	var launch = new Date(2016,03,04,10,00,00);
 	var mois = $('#mois');
 	var jours = $('#jours'); 
 	var heures = $('#heures');
