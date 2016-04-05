@@ -13,41 +13,6 @@ $(document).ready(function() {
         slidesNavPosition: 'bottom',
 	});
 });
-// COMPTEUR EVENT
-jQuery(function($){
-	
-	var launch = new Date(2016,03,04,10,00,00);
-	var mois = $('#mois');
-	var jours = $('#jours'); 
-	var heures = $('#heures');
-	var minutes = $('#minutes');
-	
-	setDate();
-	
-	function setDate(){
-			var now = new Date();
-			var s = ((launch.getTime() - now.getTime())/1000)- now.getTimezoneOffset()*60;
-			
-			var mo = Math.floor(s/2629743.83);
-			mois.html('<span class="boldTxt count">'+mo+'</span><br/><span class="slimTxt count">Mois</span>'); 
-			s-=mo*2629743.83;
-
-			var d = Math.floor(s/86400);
-			jours.html('<span class="boldTxt count">'+d+'</span><br/><span class="slimTxt count">Jour'+(d>1?'s':'')+'</span>'); 
-			s-=d*86400;
-			
-			var h = Math.floor(s/3600);
-			heures.html('<span class="boldTxt count">'+h+'</span><br/><span class="slimTxt count">Heure'+(h>1?'s':'')+'</span>'); 
-			s-=h*3600;
-			
-			var m = Math.floor(s/60);
-			minutes.html('<span class="boldTxt count">'+m+'</span><br/><span class="slimTxt count">Minute'+(m>1?'s':'')+'</span>'); 
-			s-=m*60;
-			
-			setTimeout(setDate,1000);
-			
-		}
-});
 
 var couleur = [];
 $('.lien-menu').each(function(){
